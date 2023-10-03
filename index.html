@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <script src="workshop.js"></script>
+</head>
+<body>
+    <h1>Party Organizer</h1>
+    <form id="addParty">
+      <label>
+        Name 
+        <input type="text" id="partyName">
+      </label>
+      <label>
+        Date
+        <input type="date" id="partyDate">
+      </label>
+      <label>
+        Time
+        <input type="time" id="partyTime">
+      </label>
+      <label>
+        Location
+        <input type="text" id="partyLocation">
+      </label>
+      <label>
+        Description
+        <textarea name="text" id="partyDescription"></textarea>
+      </label>
+      <button type="submit">Add Party</button>
+    </form>
+    <ul id="partyList"></ul>
+</body>
+</html>
