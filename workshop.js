@@ -5,8 +5,8 @@ const state = {
 };
 
 // dom references
-const partyList = document.querySelector("partyList");
-const addPartyForm = document.querySelector("#addParty");
+const partyList = document.querySelector("#partyList");
+const addPartyForm = document.querySelector("#addPartyForm");
 addPartyForm.addEventListener("submit", addParty);
 
 
@@ -27,7 +27,9 @@ async function getParties() {
     }
 };
 
-// render artist from state 
+getParties()
+
+// render parties from state 
 function renderParties() {
     if (!state.parties.length) {
         partyList.innerHTML = `<li>No parties found</li>`;
